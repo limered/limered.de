@@ -6,7 +6,7 @@ permalink: /ludumdare/
 
 All of my submissions for LD Jams
 
-**LD Jam 34** - Two button game, Growing | Flower Power | [Submission](http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=66066) | [Code](https://github.com/limered/LD34)
+**LD Jam 34** - Two button game, Growing \| Flower Power \| [Submission](http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=66066) | [Code](https://github.com/limered/LD34)
 
 **LD Jam 35** - Shapeshift | Don't loose your head! | [Submission](http://ludumdare.com/compo/ludum-dare-35/?action=preview&uid=93112) | [Code](https://github.com/limered/LD35)
 
