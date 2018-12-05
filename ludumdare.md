@@ -19,3 +19,5 @@ All of my submissions for LD Jams
 **LD Jam 41** - Combine 2 Incompatible Genres \| Formula 1x1 \| [Submission](https://ldjam.com/events/ludum-dare/41/formula-1x1) \| [Code](https://github.com/limered/LD41)
 
 **LD Jam 42** - Running out of Space \| S.P.A.C.E – Stinky Purring Annoyed Cat Escape \| [Submission](https://ldjam.com/events/ludum-dare/42/s-p-a-c-e-stinky-purring-annoyed-cat-escape) \| [Code](https://github.com/limered/LD42/tree/develop)
+
+**LD Jam 43** - Sacrifices must be made \| Generous Ginger George, the Gingerbreadman \| [Submission](https://ldjam.com/events/ludum-dare/43/generous-ginger-george-the-gingerbreadman) \| [Code](https://github.com/limered/LD43)
