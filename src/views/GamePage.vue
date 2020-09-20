@@ -1,5 +1,21 @@
 <template>
     <div>
-        {{$route.param.gamename}}
+        {{game.title}}
     </div>
 </template>
+
+<script>
+import { useRoute } from 'vue-router';
+import games from '../data/games';
+
+export default {
+  name: 'GamePage',
+  setup() {
+    const route = useRoute();
+    const game = games
+      .find((g) => g.link === route.params.gamename);
+
+    return { game };
+  },
+};
+</script>

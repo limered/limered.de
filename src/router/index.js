@@ -1,9 +1,6 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Games from '../views/Games.vue';
 import GamePage from '../views/GamePage.vue';
-
-Vue.use(VueRouter);
 
 const routes = [
   {
@@ -17,7 +14,8 @@ const routes = [
   },
 ];
 
-const router = new VueRouter({
+const router = createRouter({
+  history: createWebHashHistory(),
   routes,
 });
 

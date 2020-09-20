@@ -1,6 +1,6 @@
 <template>
-    <a class="gameCard" :href="link">
-      <div>
+    <router-link :to="link">
+      <div class="gameCard">
         <img class="imageLink" :src="imageLink" />
         <img class="gifLink" :src="gifLink" />
         <div class="info">
@@ -8,11 +8,11 @@
           <div class="subTitle">{{subTitle}}</div>
         </div>
       </div>
-    </a>
+    </router-link>
 </template>
 
 <script>
-import { computed } from '@vue/composition-api';
+import { computed } from 'vue';
 
 export default {
   props: {

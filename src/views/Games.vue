@@ -2,7 +2,7 @@
   <div class="home">
     <h1>Games</h1>
     <div class="gameContainer">
-      <div v-for="game in state.games" v-bind:key="game.title">
+      <div v-for="game in state.games" v-bind:key="game.link">
         <Game
           :title="game.title"
           :subTitle="game.subtitle"
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { reactive } from '@vue/composition-api';
+import { reactive } from 'vue';
 import Game from '../components/Game.vue';
 import games from '../data/games';
 
