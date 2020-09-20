@@ -1,11 +1,11 @@
 <template>
     <router-link :to="link">
       <div class="gameCard">
-        <img class="imageLink" :src="imageLink" />
-        <img class="gifLink" :src="gifLink" />
+        <img class="imageLink" :src="game.imageLink" />
+        <img class="gifLink" :src="game.gifLink" />
         <div class="info">
-          <div class="title">{{title}}</div>
-          <div class="subTitle">{{subTitle}}</div>
+          <div class="title">{{game.title}}</div>
+          <div class="subTitle">{{game.subTitle}}</div>
         </div>
       </div>
     </router-link>
@@ -16,14 +16,16 @@ import { computed } from 'vue';
 
 export default {
   props: {
-    imageLink: String,
-    gifLink: String,
-    title: String,
-    subTitle: String,
-    linkPath: String,
+    game: {
+      image: String,
+      gif: String,
+      title: String,
+      subtitle: String,
+      shortTitle: String,
+    },
   },
   setup(props) {
-    const link = computed(() => `/game/${props.linkPath}`);
+    const link = computed(() => `/game/${props.game.shortTitle}`);
 
     return {
       link,

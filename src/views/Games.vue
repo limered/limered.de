@@ -3,11 +3,7 @@
     <h1>Games</h1>
     <div class="gameContainer">
       <div v-for="game in state.games" v-bind:key="game.link">
-        <Game
-          :title="game.title"
-          :subTitle="game.subtitle"
-          :linkPath="game.link"
-        />
+        <Game :game="game" />
       </div>
     </div>
   </div>

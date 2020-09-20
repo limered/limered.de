@@ -13,7 +13,7 @@ export default {
   setup() {
     const route = useRoute();
     const game = games
-      .find((g) => g.link === route.params.gamename);
+      .find((g) => g.shortTitle === route.params.shortTitle);
 
     return { game };
   },
