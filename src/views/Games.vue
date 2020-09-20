@@ -3,9 +3,10 @@
     <h1>Games</h1>
     <div class="gameContainer">
       <div v-for="game in state.games" v-bind:key="game.title">
-        <l-d-game
+        <Game
           :title="game.title"
           :subTitle="game.subtitle"
+          :linkPath="game.link"
         />
       </div>
     </div>
@@ -14,13 +15,13 @@
 
 <script>
 import { reactive } from '@vue/composition-api';
-import LDGame from '../components/LDGame.vue';
+import Game from '../components/Game.vue';
 import games from '../data/games';
 
 export default {
   name: 'Home',
   components: {
-    LDGame,
+    Game,
   },
   setup() {
     const state = reactive({

@@ -1,27 +1,40 @@
 <template>
-    <div class="gameCard">
+    <a class="gameCard" :href="link">
+      <div>
         <img class="imageLink" :src="imageLink" />
         <img class="gifLink" :src="gifLink" />
         <div class="info">
           <div class="title">{{title}}</div>
           <div class="subTitle">{{subTitle}}</div>
         </div>
-    </div>
+      </div>
+    </a>
 </template>
 
 <script>
+import { computed } from '@vue/composition-api';
+
 export default {
   props: {
     imageLink: String,
     gifLink: String,
     title: String,
     subTitle: String,
+    linkPath: String,
+  },
+  setup(props) {
+    const link = computed(() => `/game/${props.linkPath}`);
+
+    return {
+      link,
+    };
   },
 };
 </script>
 
 <style scoped>
 .gameCard{
+  display: block;
   position: relative;
   width: 300px;
   height: 300px;
@@ -50,7 +63,7 @@ img.gifLink{
   width: 100%;
 
   opacity: 0;
-  transition: 200ms;
+  transition: 500ms;
 
   background-image: linear-gradient(to bottom, rgba(1,1,1,0) 0%, rgba(0,0,0,0.5) 100%);
   color:white;
