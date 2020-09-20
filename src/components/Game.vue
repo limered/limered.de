@@ -5,7 +5,7 @@
         <img class="gifLink" :src="game.gifLink" />
         <div class="info">
           <div class="title">{{game.title}}</div>
-          <div class="subTitle">{{game.subTitle}}</div>
+          <div class="subTitle">{{game.subtitle}}</div>
         </div>
       </div>
     </router-link>

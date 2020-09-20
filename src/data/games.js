@@ -2,6 +2,27 @@ const games = [
   {
     image: '',
     gif: '',
+    title: 'Joe Disco',
+    subtitle: 'LD Jam 46 - Keep it alive',
+    shortTitle: 'LD46',
+  },
+  {
+    image: '',
+    gif: '',
+    title: 'Are you there?',
+    subtitle: 'LD Jam 45 - Start with nothing',
+    shortTitle: 'LD45',
+  },
+  {
+    image: '',
+    gif: '',
+    title: 'Fishtastic - The Adventures of Kailax',
+    subtitle: 'LD Jam 44 - Your life is currency',
+    shortTitle: 'LD44',
+  },
+  {
+    image: '',
+    gif: '',
     title: 'Generous Ginger George, the Gingerbreadman',
     subtitle: 'LD Jam 43 - Sacrifices must be made',
     shortTitle: 'LD43',
